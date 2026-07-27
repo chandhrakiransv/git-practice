@@ -6,7 +6,6 @@ class Rotate90{
 
         int n = matrix.length;
 
-        // Step 1: Transpose the matrix
         for (int i = 0; i < n; i++) {
 
             for (int j = i; j < n; j++) {
@@ -19,7 +18,6 @@ class Rotate90{
             }
         }
 
-        // Step 2: Reverse every row
         for (int i = 0; i < n; i++) {
 
             int left = 0;
@@ -51,7 +49,6 @@ class Rotate90{
 
         obj.rotate(matrix);
 
-        // Print the rotated matrix
         for (int[] row : matrix) {
             System.out.println(Arrays.toString(row));
         }
